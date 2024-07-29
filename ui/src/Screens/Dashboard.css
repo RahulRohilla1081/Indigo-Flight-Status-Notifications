@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+
+/* html, * {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+} */
+
+.flight-card {
+  /* width: 400px; */
+  height: 300px;
+  margin: 10px;
+  /* margin: 100px auto; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  .flight-card-header {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, #264b76 0%, #002c5f 100%);
+    padding: 10px 10px;
+    border-bottom: 7px solid #6dbe47;
+    position: relative;
+
+    .flight-data {
+      /* height: auto; */
+      height: 50px;
+      /* border-top: 2px solid #3e5177; */
+      padding-top: 5px;
+      /* display: flex; */
+      /* justify-content: space-between; */
+      display: grid;
+      grid-template-columns: 3fr 3fr 2fr;
+      text-align: left;
+      span {
+        display: block;
+      }
+      .title {
+        color: #838ea8;
+        font-size: 16px;
+      }
+      .detail {
+        font-size: 13px;
+        padding-top: 3px;
+        color: white;
+      }
+    }
+  }
+
+  .flight-card-content {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    .flight-row {
+      width: 100%;
+      padding: 10px 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .plane {
+        text-align: center;
+        position: relative;
+        img {
+          width: 90px;
+        }
+        &:before {
+          content: "";
+          width: 0px;
+          height: 3px;
+          background: #efefef;
+          position: absolute;
+          top: 45px;
+          left: -85px;
+        }
+        &:after {
+          content: "";
+          width: 0px;
+          height: 3px;
+          background-color: #efefef;
+          position: absolute;
+          top: 45px;
+          right: -5px;
+        }
+      }
+    }
+    .flight-from {
+      text-align: left;
+      float: left;
+    }
+    .flight-to {
+      text-align: right;
+      float: right;
+    }
+    .flight-from,
+    .flight-to {
+      span {
+        display: block;
+      }
+      .from-code,
+      .to-code {
+        font-size: 20px;
+        color: #002c5f;
+        font-weight: 200;
+      }
+      .from-city,
+      .to-city {
+        font-size: 18px;
+        color: #002c5f;
+        font-weight: 400;
+      }
+    }
+    .flight-details-row {
+      width: 100%;
+      display: grid;
+      padding: 10px 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      span {
+        display: block;
+      }
+      .title {
+        color: #6a8597;
+        font-size: 12px;
+        letter-spacing: 3px;
+      }
+      .detail {
+        margin-top: 0.2em;
+        color: #002c5f;
+        font-size: 13px;
+      }
+      .flight-operator {
+        text-align: left;
+        float: left;
+      }
+      .flight-class {
+        float: right;
+        text-align: right;
+      }
+      .flight-number {
+        padding-left: 80px;
+      }
+    }
+  }
+}
+
+.searchbar {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  display: flex;
+  z-index: 3;
+  height: 44px;
+  background: white;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  /* margin: 0 auto; */
+  /* width: auto; */
+  margin-top: 10px;
+  /* max-width: 224px; */
+}
+
+.searchbar:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223,225,229,0);
+}
+
+.searchbar-wrapper {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 14px;
+}
+
+.searchbar-left {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-icon-wrapper {
+  margin: auto;
+}
+
+.search-icon {
+  margin-top: 3px;
+  color: #9aa0a6;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+
+.searchbar-icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.searchbar-center {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.searchbar-input-spacer {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  height: 34px;
+  font-size: 16px;
+}
+
+.searchbar-input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, .87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -37px;
+  height: 34px;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.searchbar-right {
+  display: flex;
+  /* flex: 0 0 auto; */
+  /* margin-top: -5px; */
+  /* align-items: stretch; */
+  /* flex-direction: row */
+}
+
+.searchbar-clear-icon {
+  margin-right: 12px
+}
+
+.voice-search {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0 8px;
+  width: 2.8em;
+}
+
+
