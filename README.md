@@ -8,7 +8,7 @@
 ### Real-Time data-sync: Web Sockets
 ### Database: MongoDB
 
-### For More details please visit
+### Download the details view from below URL
 `https://drive.google.com/drive/folders/10hKioogHznR5k97bVcqOw4OTBbVkTvNw?usp=share_link`
 
 
