@@ -1,12 +1,16 @@
 # Overview of Flight Status and Notifications: IndiGo
 
-### Architecture: Event-Based Architecture
+### Architecture: Event-Driven Architecture
 ### Backend: Python
 ### Frontend: React JS
 ### Message Broker: RabbitMQ
 ### SMS Provider: Twilio
 ### Real-Time data-sync: Web Sockets
 ### Database: MongoDB
+
+### For More details please visit
+`https://drive.google.com/drive/folders/10hKioogHznR5k97bVcqOw4OTBbVkTvNw?usp=share_link`
+
 
 
 ## Tech Stack
