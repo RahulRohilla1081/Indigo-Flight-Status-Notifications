@@ -47,5 +47,8 @@ Focused on `scalability`, `reliability`, and `real-time data synchronization` to
 Please find PPT and pdf below
 [Indigo.pdf](https://github.com/user-attachments/files/16424469/Indigo.pdf)
 [Indigo.pptx](https://github.com/user-attachments/files/16425145/Indigo.pptx)
+Please find details overview of project
+[Overview.docx](https://github.com/user-attachments/files/16428444/Overview.docx)
+
 
 
