@@ -43,6 +43,6 @@ Prevented data loss by queuing messages and ensuring `reliable delivery`.
 Developed a robust flight tracking system to provide real-time flight status updates and notifications to
 passengers. The system provides live updates on flight positions, statuses, and estimated arrival/departure times etc. It displays real-time flight information on an user-friendly dashboard, allowing users to track flights visually. 
 Advanced Search and Filtering enables users to search for flights by `PNR number`.
-Focused on `scalability`, `reliab[Indigo.pdf](https://github.com/user-attachments/files/16424469/Indigo.pdf)
-ility`, and `real-time data synchronization` to provide an exceptional user experience.
+Focused on `scalability`, `reliability`, and `real-time data synchronization` to provide an exceptional user experience.
+[Indigo.pdf](https://github.com/user-attachments/files/16424469/Indigo.pdf)
 
