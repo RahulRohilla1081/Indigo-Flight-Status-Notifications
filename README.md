@@ -4,6 +4,7 @@
 ### Backend: Python
 ### Frontend: React JS
 ### Message Broker: RabbitMQ
+### SMS Provider: Twilio
 ### Real-Time data-sync: Web Sockets
 ### Database: MongoDB
 
@@ -15,6 +16,8 @@
 `React JS` (Built a user-friendly interface for real-time flight tracking.)
 ### Message Broker: 
 `RabbitMQ` (Managed event queues for notifications, ensuring reliability and scalability.)
+### SMS Notification: 
+`Twilio` integrated as the SMS provider. Ensured reliable and timely delivery of SMS notifications to end-users.
 ### Web Sockets: 
 Enabled real-time communication between the backend and frontend applications.
 ### Database: 
