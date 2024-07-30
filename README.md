@@ -5,6 +5,7 @@
 ### Frontend: React JS
 ### Message Broker: RabbitMQ
 ### Real-Time data-sync: Web Sockets
+### Database: MongoDB
 
 
 ## Tech Stack
@@ -16,6 +17,8 @@
 `RabbitMQ` (Managed event queues for notifications, ensuring reliability and scalability.)
 ### Web Sockets: 
 Enabled real-time communication between the backend and frontend applications.
+### Database: 
+`MongoDB` Managed complex data efficiently, supporting real-time queries and updates
 
 ## Business Benefits
 ### Real-Time Tracking: 
