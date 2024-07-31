@@ -98,7 +98,7 @@ Admin can add new aircrafts data if indigo adds new aircrafts in the fleet.
 
 Admin can add/manage the airports details like airport name, IATA Code, ICAO Code, City, Country.  
 
-`Summary of Architecture:`   
+## Summary of Architecture: 
 
 I used an `event-driven architecture` approach to make the application `scalable`, `reliable`, `resilient`, and capable of `real-time processing`.
 
@@ -116,7 +116,7 @@ I used the pymongo package to query MongoDB for data such as flight lists, creat
 
 I used Twilio to send SMS notifications and the smtplib package to send email notifications from a support email address to passengers.
 
-Case Study Summary:
+## Case Study Summary:
 
 Admin logs in and updates flight data, which is reflected in real-time on the dashboard.
 
