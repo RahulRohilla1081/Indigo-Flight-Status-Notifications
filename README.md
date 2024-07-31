@@ -100,29 +100,29 @@ Admin can add/manage the airports details like airport name, IATA Code, ICAO Cod
 
 `Summary of Architecture:`   
 
-I used an event-driven architecture approach to make the application scalable, reliable, Resilient and real-time processing   
+I used an `event-driven architecture` approach to make the application `scalable`, `reliable`, `resilient`, and capable of `real-time processing`.
 
-I have implemented Role-Based Access Control (RBAC) to separate the admin screens from the passenger screens. RBAC is used to secure admin access with passwords while allowing anyone to search and view flight data. 
+I implemented Role-Based Access Control (RBAC) to separate the admin screens from the passenger screens. RBAC secures admin access with passwords while allowing anyone to search and view flight data.
 
-In this react.js business application I created Screen to manage flight delays, gate changes, terminal changes, flight diversions. Whenever Admin updates the flight, a event will be generated, that event will be pushed into Queue (RabbitMQ ) then that event will be consumed, and notification will be sent to passenger.  
+In this React.js business application, I created screens to manage flight delays, gate changes, terminal changes, and flight diversions. Whenever an admin updates the flight, an event is generated. That event is pushed into a queue (RabbitMQ) and then consumed, with notifications sent to passengers.
 
-To achieve this, I used RabbitMQ, I created event producer (React JS website) and consumer( RabbitMQ Consumer) as separate services for notifications (Email and SMS) All the flights changes pushed to a queue in RabbitMQ then from that queue consumer will send notification to passengers. This approach will help in case of server downtime! We will not lose any data of notification. Whenever our server will be up, email and SMS notification will be sent to passengers.  
+To achieve this, I used RabbitMQ. I created an event producer (React JS website) and a consumer (RabbitMQ Consumer) as separate services for notifications (Email and SMS). All flight changes are pushed to a queue in RabbitMQ, and from that queue, the consumer sends notifications to passengers. This approach helps in case of server downtime, ensuring no notification data is lost. Whenever our server is back up, email and SMS notifications are sent to passengers.
 
-Also, this also triggers the web socket and web socket will send the updated flight details in dashboard in real-time.  
+Additionally, this triggers the WebSocket, which sends the updated flight details to the dashboard in real-time.
 
-I have written the backend in python and used MongoDB as database for flexibility and scalability. I Created a python server to create REST APIs and implemented web sockets with the help of FastAPI package in python.  
+I wrote the backend in Python and used MongoDB as the database for flexibility and scalability. I created a Python server to provide REST APIs and implemented WebSockets using the FastAPI package.
 
-I used pymongo package to implement queries in MongoDB to get the data from database like flights-list, create flight data, update flight data.   
+I used the pymongo package to query MongoDB for data such as flight lists, creating flight data, and updating flight data.
 
-I used Twilio to send the SMS and smtplib package to send the email notification from support email id to passengers.  
+I used Twilio to send SMS notifications and the smtplib package to send email notifications from a support email address to passengers.
 
-Case Study Summary: 
+Case Study Summary:
 
-Admin logs in and updates flight data. Real time data gets updated in dashboard accordingly.  
+Admin logs in and updates flight data, which is reflected in real-time on the dashboard.
 
-For every update in flight records, respective passengers receive automatic notifications through email as well as SMS. 
+For every update in flight records, respective passengers receive automatic notifications through email and SMS.
 
- Even if the server stops during this process, the notification process stays the MQRabbit queue and the process gets completed immediately when the server restarts. In this way, no processes are lost even if the server stops suddenly and it is ensured that the passengers get timely notifications without fail. 
+Even if the server stops during this process, the notification data remains in the RabbitMQ queue, and the process is completed immediately when the server restarts. This ensures that no processes are lost, and passengers receive timely notifications without fail. 
 
 
 
